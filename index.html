@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Donate</title>
+		<link href="styles.css" rel="stylesheet" />
+		<script src="index.js" defer></script>
+		<script src="https://js.paystack.co/v1/inline.js"></script>
+	</head>
+	<body>
+			<section id="top">
+				<div id="alert-div" class="hide">
+					<div>
+						<article>
+							<h2>❤️️ <br />Thank you for your donation</h2>
+							<p>You are eligible for a 5% discount on your next purchase at the shoe shop.</p>
+							<hr />
+							<input id="close-alert" type="button" value="Close" onclick="closeAlertDiv()"/>
+						</article>
+					</div>
+				</div>
+				<header class="rows nav-row">
+                <div class="brand-logo">
+                    <a href="https://theshoeshop.ng/" target="blank">
+						<img id="logo" src="img/logo.webp" alt="the shoe shop" />
+					</a>
+                </div>
+                <div class="links">
+                    <a href="https://theshoeshop.ng/" target="blank">shop</a>
+                    <a href="https://theshoeshop.ng/pages/about-us" target="blank">about us</a>
+                    <a href="https://theshoeshop.ng/pages/contact-us" target="blank">contact us</a>
+                </div>
+                
+                <ul id="menu-list">
+                    <li><a href="https://theshoeshop.ng/" target="blank">shop</a>
+                    </li>
+                    <li><a href="https://theshoeshop.ng/pages/about-us" target="blank">about us</a></li>
+                    <li><a href="https://theshoeshop.ng/pages/contact-us" target="blank">contact us</a></li>
+                </ul>
+                   
+                    
+                <a id="menu-icon" href="#">
+                    <img src="img/menu.svg" alt=""/>
+				</a> 
+                
+                <a id="close-icon" href="#">
+                    <img src="img/close.png" alt=""/>
+				</a> 
+
+            </header>
+			<section id="main-body">
+					<main>
+						<h1>Help Fund Our New Space</h1>
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Cras tincidunt pharetra dapibus. Etiam risus purus, mattis
+								ut bibendum at, facilisis ac risus.
+							</p>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus
+								et ultrices posuere cubilia curae.
+							</p>
+
+						</div>
+					</main>
+					<aside>
+						<form class="form">
+								<legend>Donor's Information</legend>
+								<div>Please fill the fields below</div>
+								<div class="form-div">
+									<input id="name"  type="text" placeholder="name" />
+								</div>
+							<span id="nameSpan" class="danger">Please enter a name</span>
+
+								<div class="form-div">
+									<input id="email"  type="email" placeholder="email"/>
+								</div>
+							<span id="emailSpan" class="danger">Please enter an email address</span>
+
+
+							<div class="form-div">
+								<span class="input-group-addon">₦</span>
+								<input id="amount" type="text" placeholder="50,000" pattern="^\d{3}[\s-]?\d{3}$" />
+							</div>
+							<span id="amountSpan" class="danger">Please enter an amount</span>
+
+							<div class="form-div">
+								
+							</div>
+						</form>
+						<button type="button" class="green block" onclick="payWithPaystack()">Donate with  <img src="img/paystack.png"/></button>
+						
+					</aside>
+				</section>
+			</section>
+		
+			<section id="info">
+				<div id="title-div">
+					<a id="beginning-heading" class="clicked" href="#info"><h3>Humble Beginnings</h3></a>
+					<a id="faith-heading" href="#info"><h3>A huge leap of faith</h3></a>
+					<a id="support-heading" href="#info"><h3>Why we're seeking your support</h3></a>
+				</div>
+				<article id="beginning" >
+					<div>
+						<video controls>
+							<source src="img/video.mp4" type="video/mp4" />
+						</video>
+						<p>
+							The Shoe Shop sells beautiful, high-quality women’s shoes from the UK & US. We deliver free to every part of Nigeria.
+							Our space has become too small for the shoes, for us and for you.
+							<br /> <br />
+							In 2013, I tried to buy shoes for myself. After visiting several stores, I found that most of the available options were too expensive, too old, inauthentic or had been in stock for too long. I realized that if I had this need, a lot of other women probably did too.
+							<br /> <br />
+							And I wasn’t wrong — over the past 8 years, thousands of women from all over Nigeria (and the world) have bought shoes from us online and in-store. And we are forever grateful for this.
+						</p>
+					</div>
+				</article>
+				<article id="faith" class="hide">
+					<div>
+						<p>
+							A year ago, we realized that we need a larger store that could accommodate the increasing range of designs we’d like to make available to our clients, and so we made arrangements to procure one. Long story short, it’s HUGE, it’s permanent and we’ll never have to pay rent again. The video above gives you a better idea of the size.
+							<br /> <br />
+							But the state of this space is not currently useable, we have to finish it to make it habitable for the shop and the shoes. We’ve explored several quotes and the most modest one came to ₦35,000,000 ( see below for a breakdown).
+						</p>
+						<img class="inline-img" src="img/shoe.jpg" alt="" />
+						</div>
+				</article>
+				<article id="support" class="hide">
+					<div>
+						<img class="inline-img" src="img/shoe.jpg" alt="" />
+						<p>
+							We had 2 options. 
+							<br /> <br />
+							Option 1 was to take the money from the shoes and use it to complete the space. Not only would that take several years, we also face the problem of not having space to keep our increasing number of shoes, and it would also affect the number of shoes you are able to choose from. Remember that the US dollar goes up every other week. The number of shoes that we were able to buy when the dollar was ₦360 is much less than we are able to buy today with the dollar at ₦485. If we chose this method, our meagre funds would, rather than go towards bringing more shoes, be expended on the building project. 
+							<br /> <br />
+							Option 2 was this crowdfunding. I realized that everything this business has been able to do over the past 8 years was done through your support. I moved from my parents’ house to our first store; from just me for the first 5 years to 12+ employees. 
+							<br /> <br />
+							Then we found a way to subsidize delivery charges so much that we decided to bear the costs on your behalf so all you have to worry about is the cost of the shoes. All of this has been because you have made it possible. That’s why I came back to you.
+						</p>
+					</div>
+				</article>
+			</section>
+
+
+			<section id="info2">
+				<article>
+					<h2>What your donation would help us achieve</h2>
+					<img src="" alt="" />
+					<p>
+						Our goal is to get the space to be useable and comfortable for you— to look like this. We’ll have over 2000 pairs of shoes available for purchase at every point.
+						<br />
+						Below is a breakdown of the costs:
+					</p>
+					<div class="info-div">
+						<img src="img/key1.png" alt="Cost Breakdown" />
+						<img src="img/main-chart.png" alt="Cost Breakdown" />
+						<img src="img/key2.png" alt="Cost Breakdown" />
+					</div>
+					<p>
+						This quote does not include workmanship for the labourers, doors, cameras, Central AC System , ceiling work and the WC System for the toilets. It also excludes several other costs like computers, staff sitting, staff lounge, and so on. These are all costs that we will bear.
+					</p>
+				</article>
+			</section>
+			<section id="faq">
+				<article class="pt-50">
+					<div class="faq-div">
+						<a href=""><h4>How can I give?</h4></a>
+					</div>
+					
+					<div class="hide">
+						<p>You can choose to make a transfer to </p>
+							<ul>
+								<li>Bank: Zenith Bank</li>
+								<li>Acc No: 1017728390</li>
+								<li>Acc Name: The Shoe Shop </li>
+							</ul>
+						<p>
+							Or you can use the payment form on this page to insert your card details. 
+						</p>
+					</div>
+
+					<div class="faq-div">
+						<a href=""><h4>I’m not in Nigeria can I give?</h4></a>
+					</div>
+					<p class="hide">
+						Absolutely. This page is enabled with Paystack which also receives international payments. 
+					</p>
+
+					<div class="faq-div">
+						<a href=""><h4>What happens after I give?</h4></a>
+					</div>
+					<ol class="hide">
+						<li>
+							You will be mailed a code to enable you earn a discount off your next purchase from our website <a href="https://www.theshoeshop.ng">www.theshoeshop.ng</a> You can use the code immediately
+						</li>
+						<li>
+							During the campaign, you will regularly see updates about the progress of the campaign.
+						</li>
+						<li>
+							At the end of the campaign, we will: 
+							<ol>
+								<li>
+									Announce the full amount received, with matching bank statements.
+								</li>
+								<li>
+									Thank everyone who supported the project.
+								</li>
+								<li>
+									Expend the funds received on the project with regular updates at every new stage.
+								</li>
+								<li>
+									Cover a wall with the names of everyone who contributed to the campaign.
+								</li>
+								<li>
+									Host a free opening event for everyone to come and see what we did with your money.
+								</li>
+							</ol>
+						</li>
+					</ol>
+					<div class="faq-div">
+						<a href=""><h4>Campaign Duration</h4></a>
+					</div>
+					<p class="hide">
+						90 days but if we are able to raise the full amount before then, we will immediately close the campaign. 
+					</p>
+				</article>
+				<article>
+					<h4>Verification and Fact-checking</h4>
+					<table>
+						<tr>
+							<td>Information regarding the building project and materials</td>
+							<td>Architect Timothy</td>
+							<td><a href="tel:+2348033155647">08033155647</a></td>
+						</tr>
+						<tr>
+							<td>Information concerning The Shoe Shop (goals, vision, history)</td>
+							<td>Lola Quadri</td>
+							<td><a href="tel:+2348134886426">08134886426</a></td>
+						</tr>
+						<tr>
+							<td>Information about The Shoe Shop (daily operations)</td>
+							<td>Folagbemi Olujuyigbe</td>
+							<td><a href="tel:+2347033312667">07033312667</a></td>
+						</tr>
+						<tr>
+							<td>Information about this Crowdfunding Campaign</td>
+							<td>Remi Osifo</td>
+							<td><a href="tel:+2347088136205">07088136205</a></td>
+						</tr>
+						<tr>
+							<td>If you’d like to order from The Shoe Shop</td>
+							<td>Juliana Udama</td>
+							<td><a href="tel:+2348079787268">08079787268</a></td>
+						</tr>
+					</table>
+				</article>
+			</section>
+		<footer>
+			<div id="socials">
+				Keep up with us:
+				<a href="https://facebook.com/theshoeshopng" target="blank"><img src="img/icons8-facebook (1).svg" alt="Facebook"></a>
+				<a href="https://twitter.com/theshoeshopnig" target="blank"><img src="img/icons8-twitter (1).svg" alt="Twitter"></a>
+				<a href="https://instagram.com/theshoeshopnig" target="blank"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
+				<a href="https://youtube.com/lolaofabuja" target="blank"><img src="img/icons8-play-button.svg" alt="Youtube"></a>
+			</div>
+			<div id="copyright">
+				Copyright 2021. Designed by <a href="https://oreolaleye.com.ng">Ore Olaleye</a> for The Shoe Shop Nig.
+			</div>
+		</footer>
+	</body>
+</html>
