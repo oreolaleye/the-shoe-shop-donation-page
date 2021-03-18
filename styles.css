@@ -131,7 +131,7 @@ section#info article {
 
 article div {
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: wrap;
     justify-content: space-between;
     margin-top: 50px;
     padding: 30px;
