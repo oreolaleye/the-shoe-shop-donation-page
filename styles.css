@@ -429,6 +429,8 @@ input#amount {
     section main {
         padding: 20px 20px 60px 20px;
     }
+    input{
+        font-size: 18px;}
 
     article div p {
         font-size: 12px;
