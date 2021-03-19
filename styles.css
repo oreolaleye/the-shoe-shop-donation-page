@@ -112,10 +112,12 @@ section main {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
-    margin: 50px 30px 50px 0;
-    height: 350px;
+    margin: 30px 30px 50px 0;
+    height: 400px;
     width: 520px;
 }
+
+
 
 section#info {
     grid-area: info;
@@ -423,6 +425,18 @@ input#amount {
 }
 
 @media only screen and (max-device-width: 600px) {
+    article div p {
+        font-size: 16px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+
+    article#left {
+        font-size: 20px;
+    }
+
     section#faq {
         display: block;
     }
@@ -434,6 +448,9 @@ input#amount {
     }
 
 
+    section main p {
+        font-size: 24px;
+    }
 
     footer p {
         font-size: 16px;
