@@ -147,6 +147,12 @@ section#info article {
 
 
 article div {
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+>>>>>>> f8d3ef3a5dff5411156d0c85bf8a01f7291c0906
     margin-top: 50px;
     padding: 30px;
     line-height: 1.2;
