@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template-areas: 'top''info''info2''faq''footer';
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 5rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 7rem;
     height: 100vh;
 }
 
@@ -58,9 +58,26 @@ header {
 }
 
 #menu-icon,
-#menu-list,
 #close-icon {
     display: none;
+}
+
+#menu-list {
+    background-color: white;
+    list-style: none;
+    padding: 20px;
+    position: absolute;
+    right: 60px;
+    top: 80px;
+}
+
+#menu-list li {
+    margin-top: 10px;
+}
+
+#menu-list li a {
+    color: black;
+    text-decoration: none;
 }
 
 .rows {
@@ -124,27 +141,39 @@ section#info {
 
 section#info article {
     box-shadow: rgb(71, 71, 71) 10px 10px 25px;
-    margin: 30px 13%;
+    margin: 30px 12%;
 }
 
 
 
 article div {
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: space-between;
     margin-top: 50px;
     padding: 30px;
     line-height: 1.2;
 }
+
 
 article div p {
     padding: 10px 30px;
 }
 
 video {
-    width: 500px;
-    height: 320px;
+    float: left;
+}
+
+.img-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.img-left {
+    float: left;
+}
+
+.media {
+    margin-right: 30px;
+    width: 50%;
+    height: 300px;
 }
 
 img.inline-img {
@@ -169,6 +198,7 @@ section#info2 article h2 {
 
 section#info2 div.info-div {
     display: block;
+    text-align: center;
     margin: 0 10%;
 }
 
@@ -176,11 +206,19 @@ section#info2 div.info-div {
 section#faq {
     border-top: 3px dashed gray;
     grid-area: faq;
-    margin: 10px 12%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    margin: 10px 12% 30px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
     padding: 30px 50px;
+}
+
+section#faq article#left {
+    width: 60%;
+}
+
+section#faq article#right {
+    width: 35%;
 }
 
 section#faq article a {
@@ -188,15 +226,24 @@ section#faq article a {
     text-decoration: none;
 }
 
-section#faq article p,
-section#faq article ul {
-    margin-right: 50px;
-    list-style: none;
-}
-
 section#faq article div.faq-div {
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid gray;
+}
+
+div#faqOne {
+    margin: 0;
+    padding: 0;
+}
+
+div#faqOne p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+section#faq article div.faq-div img {
+    float: right;
 }
 
 .block {
@@ -229,6 +276,18 @@ section aside {
     width: 300px;
 }
 
+#socials {
+    box-shadow: rgb(71, 71, 71) 5px 5px 10px;
+    display: block;
+    margin: 50px 20% 0;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#socials a {
+    margin: 10px;
+}
 
 /*FOOTER*/
 footer {
@@ -237,17 +296,6 @@ footer {
     text-align: center;
     padding: 15px 10px 100px;
     margin-bottom: 0;
-}
-
-#socials {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-
-
-#copyright {
-    font-size: 12px;
 }
 
 
@@ -365,6 +413,34 @@ input#amount {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-device-width: 450px) {
+    footer {
+        padding: 15px 50px 160px;
+    }
+}
+
+@media only screen and (max-device-width: 600px) {
+    section#faq {
+        display: block;
+    }
+
+    section#faq article#left,
+    section#faq article#right {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+
+    footer p {
+        font-size: 16px;
+    }
+
+    #socials {
+        margin: 50px 20% 0;
+        width: 60%;
+    }
+}
 
 @media only screen and (max-device-width:859px) {
 

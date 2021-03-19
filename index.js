@@ -108,3 +108,89 @@ h3Support.onclick = function(){
     h3Faith.classList.remove("clicked");
 
 }
+
+
+const faq1 = document.getElementById("faq1");
+const faq2 = document.getElementById("faq2");
+const faq3 = document.getElementById("faq3");
+const faq4 = document.getElementById("faq4");
+
+const faqImg1 = document.getElementById("faqImg1");
+const faqImg2 = document.getElementById("faqImg2");
+const faqImg3 = document.getElementById("faqImg3");
+const faqImg4 = document.getElementById("faqImg4");
+
+const faqOne = document.getElementById("faqOne");
+const faqTwo = document.getElementById("faqTwo");
+const faqThree = document.getElementById("faqThree");
+const faqFour = document.getElementById("faqFour");
+
+let numClicks = 0;
+faq1.onclick = function(){
+    numClicks++;
+
+    if (numClicks % 2 === 0){
+        faqOne.classList.add("hide");
+        faqImg1.style.transform = "rotate(0)";
+        faq1.style.color = "gray";
+    }else{
+        faqOne.classList.remove("hide");
+        faqImg1.style.transform = "rotate(180deg)";
+        faq1.style.color = "black";
+    }
+}
+
+faq2.onclick = function(){
+    numClicks++;
+
+    if (numClicks % 2 === 0){
+        faqTwo.classList.add("hide");
+        faqImg2.style.transform = "rotate(0)";
+        faq2.style.color = "gray";
+    }else{
+        faqTwo.classList.remove("hide");
+        faqImg2.style.transform = "rotate(180deg)";
+        faq2.style.color = "black";
+    }
+}
+
+faq3.onclick = function(){
+    numClicks++;
+
+    if (numClicks % 2 === 0){
+        faqThree.classList.add("hide");
+        faqImg3.style.transform = "rotate(0)";
+        faq3.style.color = "gray";
+    }else{
+        faqThree.classList.remove("hide");
+        faqImg3.style.transform = "rotate(180deg)";
+        faq3.style.color = "black";
+    }
+}
+
+faq4.onclick = function(){
+    numClicks++;
+
+    if (numClicks % 2 === 0){
+        faqFour.classList.add("hide");
+        faqImg4.style.transform = "rotate(0)";
+        faq4.style.color = "gray";
+    }else{
+        faqFour.classList.remove("hide");
+        faqImg4.style.transform = "rotate(180deg)";
+        faq4.style.color = "black";
+    }
+}
+
+
+const menu = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
+
+menu.onclick = function(){
+    numClicks++;
+    if (numClicks % 2 === 0){
+        menuList.classList.add("hide")
+    }else{
+        menuList.classList.remove("hide")
+    }
+}
