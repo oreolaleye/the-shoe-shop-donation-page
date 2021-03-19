@@ -269,6 +269,7 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
+    font-size: 22px;
 }
 
 main h1 {
@@ -426,11 +427,17 @@ input#amount {
 
 @media only screen and (max-device-width: 600px) {
     article div p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     article p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 22px;
     }
 
     article#left {
