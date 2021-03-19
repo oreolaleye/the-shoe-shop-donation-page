@@ -426,6 +426,10 @@ input#amount {
 }
 
 @media only screen and (max-device-width: 600px) {
+    section main {
+        padding: 20px 20px 40px 20px;
+    }
+
     article div p {
         font-size: 12px;
     }
